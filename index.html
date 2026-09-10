@@ -4,11 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="This is the home page for the course.">
+    <meta name="author" content="Alain Kabeya">
+    <link rel="stylesheet" href="larger.css">
+    <link rel="stylesheet" href="smaller.css">
+    <script src="course.js" defer></script>
+    <script src="data.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
 
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <h1>Course Home Page</h1>
+            <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">&#9776;
+            </button>
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="chamber-project.html">Chamber Project</a>
+                <a href="final-project.html">Final Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

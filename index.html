@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Home Page</title>
+    <title>Alain Mukadi Kabeya | WDD 231 Course </title>
     <meta name="description" content="This is the home page for the course.">
-    <meta name="author" content="Alain Kabeya">
+    <meta name="author" content="Alain Mukadi Kabeya">
+    <link rel="icon" href="images/logo.svg">
     <link rel="stylesheet" href="larger.css">
     <link rel="stylesheet" href="smaller.css">
     <script src="course.js" defer></script>
@@ -22,40 +23,81 @@
 <body>
 
     <header>
-        <div class="header-container">
-            <a href="index.html">
-                <img src="logo.png" alt="Logo" class="logo">
-            </a>
-            <h1>Course Home Page</h1>
-            <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">&#9776;
-            </button>
-            <nav class="navigation" aria-label="Main navigation">
-                <a href="index.html" class="active">Home</a>
-                <a href="chamber-project.html">Chamber Project</a>
-                <a href="final-project.html">Final Project</a>
-            </nav>
+        <div class="profile">
+            <img src="images/logo.svg" alt="site logo" class="logo">
+            <span>Alain Mukadi Kabeya</span>
         </div>
+
+        <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">&#9776;
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber-project.html">Chamber Project</a>
+            <a href="final-project.html">Final Project</a>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-        </section>
+        <h1>Home</h1>
 
-        <section>
-            <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-        </section>
+        <div class="content-grid">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>My name is Alain Mukadi Kabeya, and I am from the Democratic Republic of the Congo.
+                    I am interested in technology, web development, healthcare, and community development.
+                    I enjoy learning new technologies and developing practical skills in HTML, CSS, and JavaScript.
+                    My background in healthcare has inspired me to explore how technology can improve access to
+                    information and services.
+                    I also enjoy serving my community and supporting projects that promote health, education, and
+                    development.
+                    My goal is to combine my healthcare experience with web development skills to create useful digital
+                    solutions that can make a positive difference.
+                </p>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-        </section>
+                <p>I am currently developing my skills in HTML, CSS, JavaScript, and modern web development through the
+                    WDD 231 course.
+                    This course is helping me strengthen my understanding of responsive design, web accessibility,
+                    and interactive web development while gaining practical experience building real-world websites.
+                </p>
+            </section>
+
+            <section class="photo">
+                <h2>My Photo</h2>
+                <img src="images/profile.jpg" alt="Alain Mukadi Kabeya" loading="lazy">
+            </section>
+
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="course-buttons">
+                    <button id="all-courses" type="button">All Courses</button>
+                    <button id="wdd-courses" type="button">WDD Courses</button>
+                    <button id="cse-courses" type="button">CSE Courses</button>
+                </div>
+
+                <p class="credits">
+                    Total Credits: <span id="total-credits">0</span>
+                </p>
+
+                <div id="courses-container" class="course-grid">
+
+                </div>
+                    <!-- Courses will be dynamically added here -->
+            </section>
+
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/drmukadik-debug/wdd231" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/drmukadik16239" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://web.facebook.com/alain.kabeya.750" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+        <p>&copy; <span id="current-year"></span> Alain Mukadi Kabeya | Democratic Republic of the Congo.</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 

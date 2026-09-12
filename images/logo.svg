@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Alain Mukadi Kabeya — Web Developer</title>
+  <desc id="desc">AMK personal web developer logo in navy and cyan.</desc>
+
+  <defs>
+    <linearGradient id="blue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#102A56"/>
+      <stop offset="55%" stop-color="#075BB5"/>
+      <stop offset="100%" stop-color="#08C7F2"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0B2E63"/>
+      <stop offset="55%" stop-color="#0877D8"/>
+      <stop offset="100%" stop-color="#08C7F2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White background -->
+  <rect width="1200" height="1200" fill="#FFFFFF"/>
+
+  <!-- Circular frame -->
+  <circle cx="600" cy="600" r="555" fill="none" stroke="url(#ring)" stroke-width="32"/>
+
+  <!-- AMK monogram -->
+  <g fill="url(#blue)" font-family="Arial, Helvetica, sans-serif" font-weight="900"
+     font-size="350" letter-spacing="-38">
+    <text x="105" y="625">AMK</text>
+  </g>
+
+  <!-- Code symbol inside A -->
+  <g fill="none" stroke="#0870C9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M265 515 l-42 35 42 35"/>
+    <path d="M335 515 l42 35-42 35"/>
+    <path d="M315 500 l-28 100"/>
+  </g>
+
+  <!-- Laptop / code icon -->
+  <g transform="translate(820 455)">
+    <rect x="0" y="0" width="245" height="155" rx="18" fill="#FFFFFF" stroke="#102A56" stroke-width="18"/>
+    <rect x="18" y="18" width="209" height="119" rx="8" fill="none" stroke="#102A56" stroke-width="7"/>
+    <g fill="none" stroke="#0870C9" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M83 58 l-30 28 30 28"/>
+      <path d="M162 58 l30 28-30 28"/>
+      <path d="M145 49 l-28 74"/>
+    </g>
+    <path d="M-22 158 H268 l-34 36 H12 Z" fill="#102A56"/>
+  </g>
+
+  <!-- Dynamic swoosh -->
+  <path d="M470 655
+           C590 720 745 685 905 760
+           C795 665 645 650 510 625
+           C490 620 475 635 470 655 Z"
+        fill="#08B8EE"/>
+
+  <!-- Name -->
+  <text x="600" y="805" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="82"
+        font-weight="700" fill="#102A56">
+    Alain Mukadi Kabeya
+  </text>
+
+  <!-- Web developer label -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#0877D8">
+    <line x1="170" y1="875" x2="315" y2="875" stroke="#0877D8" stroke-width="8"/>
+    <line x1="885" y1="875" x2="1030" y2="875" stroke="#0877D8" stroke-width="8"/>
+    <text x="600" y="895" text-anchor="middle" font-size="47" letter-spacing="14">
+      WEB DEVELOPER
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="600" y="970" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="25"
+        font-weight="400" letter-spacing="8" fill="#2B3D59">
+    BUILDING IDEAS FOR A BETTER TOMORROW
+  </text>
+</svg>

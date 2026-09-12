@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alain Mukadi Kabeya | WDD 231 Course </title>
-    <meta name="description" content="This is the home page for the course.">
+    <title>Alain Mukadi Kabeya | WDD 231 Course Home Page</title>
+    <meta name="description"
+        content="Course home page for WDD 231 Web Frontend Development created by Alain Mukadi Kabeya from the Democratic Republic of the Congo.">
     <meta name="author" content="Alain Mukadi Kabeya">
     <link rel="icon" href="images/logo.svg">
-    <link rel="stylesheet" href="larger.css">
-    <link rel="stylesheet" href="smaller.css">
-    <script src="course.js" defer></script>
-    <script src="data.js" defer></script>
-    <script src="navigation.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
         rel="stylesheet">
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 
 </head>
 
@@ -24,7 +28,7 @@
 
     <header>
         <div class="profile">
-            <img src="images/logo.svg" alt="site logo" class="logo">
+            <img src="images/logo.svg" alt="Alain Mukadi Kabeya's site logo" class="logo">
             <span>Alain Mukadi Kabeya</span>
         </div>
 
@@ -64,7 +68,7 @@
 
             <section class="photo">
                 <h2>My Photo</h2>
-                <img src="images/profile.jpg" alt="Alain Mukadi Kabeya" loading="lazy">
+                <img src="images/alain-profile.webp" alt="Alain Mukadi Kabeya" loading="lazy" width="400" height="400">
             </section>
 
             <section class="certificate">
@@ -83,7 +87,7 @@
                 <div id="courses-container" class="course-grid">
 
                 </div>
-                    <!-- Courses will be dynamically added here -->
+                <!-- Courses will be dynamically added here -->
             </section>
 
         </div>
@@ -96,7 +100,13 @@
             <a href="https://www.linkedin.com/in/drmukadik16239" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://web.facebook.com/alain.kabeya.750" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
-        <p>&copy; <span id="current-year"></span> Alain Mukadi Kabeya | Democratic Republic of the Congo.</p>
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Alain Mukadi Kabeya |
+            Democratic Republic of the Congo.
+        </p>
+
         <p id="lastModified"></p>
     </footer>
 </body>

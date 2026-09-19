@@ -14,9 +14,8 @@ async function getMembers() {
         const members = await response.json();
 
         displayMembers(members);
-        } catch (error) {
+    } catch (error) {
         console.error("Error loading members:", error);
-
         membersContainer.innerHTML = `
             <p class="error-message">
                 Unable to load member information.
@@ -39,8 +38,6 @@ function getMembershipLevel(level) {
             return "Member";
     }
 }
-
-// Display membership Level
 
 function displayMembers(members) {
     membersContainer.innerHTML = "";
@@ -139,6 +136,11 @@ menuButton.addEventListener("click", () => {
         String(isOpen)
     );
 
+    menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
     menuButton.textContent = isOpen ? "✕" : "☰";
 });
 
@@ -154,3 +156,4 @@ document.querySelector("#lastModified").textContent =
 
 // Load members
 getMembers();
+

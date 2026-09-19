@@ -6,7 +6,7 @@
         "phone": "+243-999-8888",
         "website": "https://www.sorayaenterprises.com",
         "image": "soraya-logo.svg",
-        "membership": 3
+        "membershipLevel": 3
     },
     {
         "name": "Umoja Business Solutions",
@@ -15,7 +15,7 @@
         "phone": "+243-999-7777",
         "website": "https://www.umojabusinesssolutions.com",
         "image": "umoja-logo.svg",
-        "membership": 1
+        "membershipLevel": 1
     },
     {
         "name": "Tenora Business Solutions",
@@ -24,7 +24,7 @@
         "phone": "+243-999-5555",
         "website": "https://www.tenorabusinesssolutions.com",
         "image": "tenora-logo.svg",
-        "membership": 2
+        "membershipLevel": 2
     },
     {
         "name": "CLB Services",
@@ -33,7 +33,7 @@
         "phone": "+243-999-5556",
         "website": "https://www.clbservices.com",
         "image": "clb-logo.svg",
-        "membership": 1
+        "membershipLevel": 1
     },
     {
         "name": "Sarena Health",
@@ -42,7 +42,7 @@
         "phone": "+243-999-5557",
         "website": "https://www.sarenahealth.com",
         "image": "sarena-logo.svg",
-        "membership": 3
+        "membershipLevel": 3
     },
     {
         "name": "Mining Solutions",
@@ -51,7 +51,7 @@
         "phone": "+243-999-5558",
         "website": "https://www.miningsolutions.com",
         "image": "mining-logo.svg",
-        "membership": 1
+        "membershipLevel": 1
     },
     {
         "name": "Stella Grocery Store",
@@ -60,6 +60,6 @@
         "phone": "+243-999-5559",
         "website": "https://www.grocerystore.com",
         "image": "stella-logo.svg",
-        "membership": 3
+        "membershipLevel": 3
     }
 ]

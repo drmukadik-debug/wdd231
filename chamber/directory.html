@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mbujimayi Chamber of Commerce | Directory</title>
+    <meta name="description"
+        content="Explore the member directory of the Mbujimayi Chamber of Commerce and discover local businesses and organization.">
+    <meta name="author" content="Alain Mukadi Kabeya">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/logo-mcc.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" aria-label="Mbujimayi Chamber of Commerce Home">
+                <img class="logo" src="images/logo-mcc.svg" alt="Mbujimayi Chamber of Commerce Logo">
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-nav">&#9776;
+
+            </button>
+
+            <nav id="primary-nav" class="primary-navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="page-heading">
+            <h1>Welcome to the Member Directory</h1>
+            <p>Explore the diverse range of businesses and organizations that make up the Mbujimayi Chamber of Commerce.
+                Our directory provides a comprehensive list of our members, allowing you to connect with local
+                businesses and services.
+            </p>
+        </div>
+
+        <div class="view-controls">
+
+            <button id="grid" type="button" aria-pressed="true">Grid</button>
+            <button id="list" type="button" aria-pressed="false">List</button>
+        </div>
+
+        <section id="members" class="members-grid" aria-label="Chamber Members Businesses and Organizations">
+            <!-- Member cards will be dynamically inserted here -->
+            <p>Loading members...</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <section>
+                <h2>Mbuji-Mayi Chamber of Commerce</h2>
+                <p>10 Avenue de la Paix</p>
+                <p>Mbuji-Mayi, Kasaï-Oriental, RDC</p>
+                <p>info@mbujimayichamber.org</p>
+                <p>+243 81 000 2300</p>
+            </section>
+            <section>
+                <h2>Connect</h2>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="YouTube">▶</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            
+            </section>
+            <section>
+                <p>WDD231 Class Project</p>
+                <p>Alain Mukadi Kabeya</p>
+                
+                <p>
+                    &copy; <span id="currentyear"></span> Mbuji-Mayi Chamber of Commerce
+                </p>
+                <p>
+                    Last Modification: <span id="lastModified"></span>
+                </p>            
+        </section>
+    </div>
+</footer>
+        

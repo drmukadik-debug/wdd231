@@ -1,0 +1,107 @@
+:root {
+    --primary: #0B3D5C;
+    --secondary: #d9a941;
+    --background: #F2F5F7;
+    --surface: #FFFFFF;
+    --text: #222222;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.site-header {
+    background-color: var(--surface);
+    border-bottom: 4px solid var(--secondary);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+#menu-button {
+    font-size: 1.5rem;
+    background: white;
+    border: 2px solid var(--primary);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#primary-nav {
+    display: none;
+}
+
+#primary-nav.open {
+    display: block;
+}
+
+#primary-nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#primary-nav a {
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: var(--primary)
+}
+
+.members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.members.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.members-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.member-content {
+    padding: 1rem;
+}
+
+.member-content h2 {
+    color: var(--primary);
+}
+
+.member-content a {
+    color: var(--primary);
+}
+
+.members-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.members-list .member-card {
+    display: block;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.members-list .member-image {
+    display: none;
+}

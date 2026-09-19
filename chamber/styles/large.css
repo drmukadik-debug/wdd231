@@ -1,0 +1,25 @@
+@media (min-width: 700px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    #primary-nav {
+        display: block;
+    }
+
+    #primary-nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1000px) {
+    .members-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

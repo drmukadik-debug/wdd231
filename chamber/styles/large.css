@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
 
     #menu-button {
         display: none;
@@ -13,6 +13,7 @@
         gap: 1rem;
     }
 
+
     .members-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -20,10 +21,57 @@
     .member-card {
         max-width: none;
     }
+
+    .hero-content {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        max-width: 500px;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+
+    #forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .site-footer section {
+        margin-bottom: 0;
+    }
 }
 
-@media (min-width:1000px) {
+
+@media screen and (min-width: 1000px) {
+
+
     .members-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .events-section {
+        width: 100%;
+    }
+
+    #forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-inner {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

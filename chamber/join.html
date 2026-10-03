@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mbujimayi Chamber of Commerce | Join</title>
+    <meta name="description"
+        content="Join the Mbujimayi Chamber of Commerce and become part of a vibrant community of local businesses.">
+    <meta name="author" content="Alain Mukadi Kabeya">
+    <meta property="og:title" content="Mbujimayi Chamber of Commerce | Join">
+    <meta property="og:description"
+        content="Become a member of the Mbujimayi Chamber of Commerce and connect with local businesses and organizations.">
+    <meta property="og:image" content="https://drmukadik-debug.github.io/wdd231/chamber/images/social-preview.svg">
+    <meta property="og:url" content="https://drmukadik-debug.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/logo-mcc.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <img class="logo" src="images/logo-mcc.svg" alt="Mbujimayi Chamber of Commerce Logo" width="80" height="80">
+
+                <div>
+                    <h1>Mbujimayi Chamber of Commerce</h1>
+                    <p>Join our vibrant community of local businesses and organizations.</p>
+                </div>
+            </div>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-nav">&#9776;
+
+            </button>
+
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h2>Join the Chamber</h2>
+            <p>Become a member of the Mbujimayi Chamber of Commerce and enjoy exclusive benefits, networking
+                opportunities, and support for your business.</p>
+        </section>
+
+        <section class="join-container">
+            <!-- Membership Form -->
+
+            <div class="join-form">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+                    <label>
+                        First Name
+                        <input type="text" name="firstName" title="Enter your first name"   autocomplete="given-name" required>
+                    </label>
+                    <label>
+                        Last Name
+                        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ -]{7,}" required>
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" pattern="[0-9]{10}" placeholder="1234567890" required>
+                    </label>
+
+                    <label>
+                        Business/Organization Name
+                        <input type="text" name="business" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Select your membership level" required>
+                            <option value="">Select Membership Level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business/Organization Description
+                        <textarea name="description" title="Enter a brief description of your business or organization" rows="4" required></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                     
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+
+            <!-- Membership Benefits Section -->
+            <div class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <!-- NP -->
+
+                <article class="membership-card np-card">
+                    <h3>NP Membership</h3>
+                    <p>Basic membership for small businesses.</p>
+                    <p><strong>Free</strong> Access to networking events and basic promotional support.</p>
+                    <button type="button" class="modal-link">Learn More</button>
+                </article>
+
+                <!-- Bronze -->
+
+            <article class="membership-card bronze-card">
+
+                <h3>Bronze Membership</h3>
+
+                <p>Basic benefits for growing businesses.</p>
+
+                <p><strong>$50 / year</strong></p>
+
+                <button
+                    type="button"
+                    class="modal-link"
+                    data-modal="bronze-modal">
+                    View Benefits
+                </button>
+
+            </article>
+
+            <!-- Silver -->
+
+            <article class="membership-card silver-card">
+
+                <h3>Silver Membership</h3>
+
+                <p>Additional benefits and visibility.</p>
+
+                <p><strong>$100 / year</strong></p>
+
+                <button
+                    type="button"
+                    class="modal-link"
+                    data-modal="silver-modal">
+                    View Benefits
+                </button>
+
+            </article>
+
+            <!-- Gold -->
+
+            <article class="membership-card gold-card">
+
+                <h3>Gold Membership</h3>
+
+                <p>Premium benefits for established businesses.</p>
+
+                <p><strong>$200 / year</strong></p>
+
+                <button
+                    type="button"
+                    class="modal-link"
+                    data-modal="gold-modal">
+                    View Benefits
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- MODAL 1 -->
+
+    <dialog id="np-modal">
+
+        <button class="close-modal"
+                aria-label="Close NP Membership details">
+            ❌
+        </button>
+
+        <h2>NP Membership</h2>
+
+        <p>NP Membership is designed for nonprofit organizations.</p>
+
+        <ul>
+            <li>No membership fee</li>
+            <li>Access to chamber networking activities</li>
+            <li>Community networking opportunities</li>
+            <li>Basic chamber resources</li>
+        </ul>
+
+    </dialog>
+
+    <!-- MODAL 2 -->
+
+    <dialog id="bronze-modal">
+
+        <button class="close-modal"
+                aria-label="Close Bronze Membership details">
+            ❌
+        </button>
+
+        <h2>Bronze Membership</h2>
+
+        <p>Bronze Membership provides basic business benefits.</p>
+
+        <ul>
+            <li>Business networking opportunities</li>
+            <li>Access to selected training activities</li>
+            <li>Business directory listing</li>
+            <li>Member communication opportunities</li>
+        </ul>
+
+    </dialog>
+
+    <!-- MODAL 3 -->
+
+    <dialog id="silver-modal">
+
+        <button class="close-modal"
+                aria-label="Close Silver Membership details">
+            ❌
+        </button>
+
+        <h2>Silver Membership</h2>
+
+        <p>Silver Membership provides additional visibility and benefits.</p>
+
+        <ul>
+            <li>All Bronze benefits</li>
+            <li>Additional training opportunities</li>
+            <li>Event discounts</li>
+            <li>Additional business promotion</li>
+        </ul>
+
+    </dialog>
+
+    <!-- MODAL 4 -->
+
+    <dialog id="gold-modal">
+
+        <button class="close-modal"
+                aria-label="Close Gold Membership details">
+            ❌
+        </button>
+
+        <h2>Gold Membership</h2>
+
+        <p>Gold Membership provides premium chamber benefits.</p>
+
+        <ul>
+            <li>All Silver benefits</li>
+            <li>Priority business promotion</li>
+            <li>Home page spotlight opportunities</li>
+            <li>Premium networking opportunities</li>
+            <li>Special event opportunities</li>
+        </ul>
+
+    </dialog>
+
+</main>
+
+        </section>
+    </main>
+</body>
+
+<footer class="site-footer">
+        <div class="footer-inner">
+            <section>
+                <h2>Mbuji-Mayi Chamber of Commerce</h2>
+                <p>10 Avenue de la Paix</p>
+                <p>Mbuji-Mayi, Kasaï-Oriental, RDC</p>
+                <p>info@mbujimayichamber.org</p>
+                <p>+243 81 000 2300</p>
+            </section>
+            <section>
+                <h2>Connect</h2>
+
+                <div class="footer-links">
+                    <a href="https://github.com/drmukadik-debug/wdd231" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/drmukadik16239" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://web.facebook.com/alain.kabeya.750" target="_blank"
+                        rel="noopener noreferrer">Facebook</a>
+                </div>
+
+            </section>
+            <section>
+                <p>WDD231 Class Project</p>
+                <p>Alain Mukadi Kabeya</p>
+
+                <p>
+                    &copy; <span id="currentyear"></span> Mbuji-Mayi Chamber of Commerce
+                </p>
+                <p>
+                    Last Modification: <span id="lastModified"></span>
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

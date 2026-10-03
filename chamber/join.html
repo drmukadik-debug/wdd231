@@ -27,8 +27,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/join.js" defer></script>
 </head>
-
-<body>
+<>
 
     <header class="site-header">
         <div class="header-inner">
@@ -82,7 +81,7 @@
 
                     <label>
                         Organizational Title
-                        <input type="text" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ -]{7,}" required>
+                        <input type="text" name="organizationalTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ -]{7,}">
                     </label>
 
                     <label>
@@ -113,12 +112,12 @@
 
                     <label>
                         Business/Organization Description
-                        <textarea name="description" title="Enter a brief description of your business or organization" rows="4" required></textarea>
+                        <textarea name="description" title="Enter a brief description of your business or organization" rows="4"></textarea>
                     </label>
 
                     <input type="hidden" name="timestamp" id="timestamp">
                      
-                    <button type="submit" class="submit-button">Submit Application</button>
+                    <input type="submit" class="submit-button" value="Submit Application">
                 </form>
             </div>
 
@@ -130,9 +129,14 @@
 
                 <article class="membership-card np-card">
                     <h3>NP Membership</h3>
-                    <p>Basic membership for small businesses.</p>
-                    <p><strong>Free</strong> Access to networking events and basic promotional support.</p>
-                    <button type="button" class="modal-link">Learn More</button>
+                    <p>Membership for nonprofit organizations.</p>
+                    <p><strong>Free</strong></p>
+                    <button
+                        type="button"
+                        class="modal-link"
+                        data-modal="np-modal">
+                        View Benefits
+                    </button>
                 </article>
 
                 <!-- Bronze -->
@@ -200,8 +204,10 @@
 
     <dialog id="np-modal">
 
-        <button class="close-modal"
-                aria-label="Close NP Membership details">
+        <button 
+            type="button"
+            class="close-modal"
+            aria-label="Close NP Membership details">
             ❌
         </button>
 
@@ -222,8 +228,10 @@
 
     <dialog id="bronze-modal">
 
-        <button class="close-modal"
-                aria-label="Close Bronze Membership details">
+        <button 
+            type="button"
+            class="close-modal"
+            aria-label="Close Bronze Membership details">
             ❌
         </button>
 
@@ -244,8 +252,10 @@
 
     <dialog id="silver-modal">
 
-        <button class="close-modal"
-                aria-label="Close Silver Membership details">
+        <button 
+            type="button"
+            class="close-modal"
+            aria-label="Close Silver Membership details">
             ❌
         </button>
 
@@ -266,8 +276,10 @@
 
     <dialog id="gold-modal">
 
-        <button class="close-modal"
-                aria-label="Close Gold Membership details">
+        <button 
+            type="button"
+            class="close-modal"
+            aria-label="Close Gold Membership details">
             ❌
         </button>
 
@@ -286,12 +298,7 @@
     </dialog>
 
 </main>
-
-        </section>
-    </main>
-</body>
-
-<footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-inner">
             <section>
                 <h2>Mbuji-Mayi Chamber of Commerce</h2>
@@ -327,5 +334,4 @@
         </div>
     </footer>
 </body>
-
 </html>

@@ -567,3 +567,11 @@ dialog li {
     text-decoration: none;
     margin-top: 1.5rem;
 }
+
+.footer-links {
+    color: var(--surface);
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+}

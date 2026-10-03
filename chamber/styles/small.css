@@ -89,12 +89,13 @@ body {
 .page-heading {
     text-align: center;
     margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
 }
 
 .page-heading h1 {
     color: var(--primary);
     font-size: 2rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .page-heading p {
@@ -355,17 +356,6 @@ body {
 
 /* Join Page Styles */
 
-.page-heading {
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.page-heading h1 {
-    color: var(--primary);
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
 .join-container {
     padding: 1rem;
     max-width: 1200px;
@@ -538,7 +528,7 @@ dialog li {
 }
 
 .thank-you h2 {
-    color: var(--primary)
+    color: var(--primary);
 }
 
 .application-summary {
@@ -569,9 +559,17 @@ dialog li {
 }
 
 .footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links a {
     color: var(--surface);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .footer-links a:hover {
     color: var(--secondary);
 }
+

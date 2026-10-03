@@ -35,6 +35,12 @@ body {
     align-items: center;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .logo {
     width: 180px;
     height: auto;

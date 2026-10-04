@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mbujimayi Chamber of Commerce | Discover</title>
+    <meta name="description"
+        content="Discover important places,landmarks,institutions, businesses,and organizations in Mbuji-Mayi, Kasaï-Oriental, Democratic Republic of the Congo.">
+    <meta name="author" content="Alain Mukadi Kabeya">
+    <meta property="og:title" content="Mbujimayi Chamber of Commerce | Discover">
+    <meta property="og:description"
+        content="Explore important places and points of interest in Mbuji-Mayi, Kasaï-Oriental, Democratic Republic of the Congo.">
+    <meta property="og:image" content="https://drmukadik-debug.github.io/wdd231/chamber/images/social-preview.svg">
+    <meta property="og:url" content="https://drmukadik-debug.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/logo-mcc.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" aria-label="Mbujimayi Chamber of Commerce Home">
+                <img class="logo" src="images/logo-mcc.svg" alt="Mbujimayi Chamber of Commerce Logo">
+            </a>
+
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-nav">&#9776;
+
+            </button>
+
+            <nav id="primary-nav" class="primary-navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-heading">
+            <h1>Discover Mbuji-Mayi</h1>
+            <p>
+                Explore important places, landmarks, institutions, businesses, and natural sites in Mbuji-Mayi, Kasaï-Oriental, Democratic Republic of the Congo.
+            </p>
+        </section>
+
+        <section class="visit-message-section" aria-labelledby="visit-heading">
+            <h2 id="visit-heading">Visitor Information</h2>
+            <p id="visit-message">
+                Welcome! Let us know if you have any questions or need assistance during your visit to Mbuji-Mayi.
+        </section>
+
+        <section id="discover-grid" class="discover-grid" aria-label="Places of interest in Mbuji-Mayi">
+            <!-- Discover items will be dynamically inserted here by discover.js -->
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <section>
+                <h2>Mbuji-Mayi Chamber of Commerce</h2>
+                <p>10 Avenue de la Paix</p>
+                <p>Mbuji-Mayi, Kasaï-Oriental, RDC</p>
+                <p>info@mbujimayichamber.org</p>
+                <p>+243 81 000 2300</p>
+            </section>
+            <section>
+                <h2>Connect</h2>
+
+                <div class="footer-links">
+                    <a href="https://github.com/drmukadik-debug/wdd231" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/drmukadik16239" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://web.facebook.com/alain.kabeya.750" target="_blank"
+                        rel="noopener noreferrer">Facebook</a>
+                </div>
+
+            </section>
+            <section>
+                <p>WDD231 Class Project</p>
+                <p>Alain Mukadi Kabeya</p>
+
+                <p>
+                    &copy; <span id="currentyear"></span> Mbuji-Mayi Chamber of Commerce
+                </p>
+                <p>
+                    Last Modification: <span id="lastModified"></span>
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

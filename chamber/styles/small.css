@@ -579,3 +579,165 @@ dialog li {
     color: var(--secondary);
 }
 
+/* Discover Page Styles */
+
+.visit-message-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    background-color: var(--surface);
+    border-left: 5px solid var(--secondary);
+    border-radius: 8px;
+}
+
+.visit-message-section h2 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.visit-message-section p {
+    margin-bottom: 0;
+}
+
+/* Discover Grid */
+
+.discover-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8";
+
+    gap: 1.5rem;
+}
+
+/* Discover Cards */
+
+.discover-card {
+    background-color: var(--surface);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.discover-card h2 {
+    color: var(--primary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Images */
+
+.discover-card figure {
+    margin: 0 0 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Address */
+
+.discover-card address {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+/* Description */
+
+.discover-card p {
+    margin-bottom: 1rem;
+}
+
+/* Learn More Button */
+
+.learn-more {
+    background-color: var(--primary);
+    color: var(--surface);
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+
+.item-1 {
+    grid-area: item1;
+}
+
+.item-2 {
+    grid-area: item2;
+}
+
+.item-3 {
+    grid-area: item3;
+}
+
+.item-4 {
+    grid-area: item4;
+}
+
+.item-5 {
+    grid-area: item5;
+}
+
+.item-6 {
+    grid-area: item6;
+}
+
+.item-7 {
+    grid-area: item7;
+}
+
+.item-8 {
+    grid-area: item8;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+    .discover-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8";
+    }
+
+}

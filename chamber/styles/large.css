@@ -96,3 +96,46 @@
         top: 2rem;
     }
 }
+
+
+/*responsive css for discover page*/
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "item1 item2"
+            "item3 item4"
+            "item5 item6"
+            "item7 item8";
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "item1 item1 item2 item3"
+            "item4 item5 item5 item6"
+            "item7 item8 item8 item8";
+    }
+
+}
+
+
+@media screen and (min-width: 641px) {
+
+    .discover-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+    }
+
+}

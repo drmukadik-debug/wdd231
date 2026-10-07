@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap");
+
+:root {
+    --primary-color: #EC058E;
+    --accent-color: #62BBC1;
+    --background-color: #FFFBFC;
+    --text-color: #010400;
+    --border-color: #30332E;
+    --shadow: 0 4px 14px rgba(51, 51, 51, 0.10);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1,
+header h2,
+h2,
+h3 {
+    font-family: "Merriweather", serif;
+}
+
+header h1,
+header h2 {
+    margin: 0.25rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--background-color);
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+p,
+li {
+    font-size: 1rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+}
+
+.color-grid,
+.typography-grid,
+.wireframe-grid {
+    display: grid;
+    gap: 1rem;}
+
+.site-footer {
+margin-top: 3rem;
+}
+
+.footer-bottom {
+background-color: var(--primary-color);
+color: var(--background-color);
+text-align: center;
+padding: 1.5rem 1rem;
+border-top: 5px solid var(--background-color);
+}
+
+.footer-bottom p {
+margin: 0.4rem 0;
+line-height: 1.5;
+font-size: 0.9rem;
+}
+
+.footer-bottom p {
+color: var(--background-color);
+font-family: "Merriweather", serif;
+font-weight: 700;
+}
+
+#lastModified {
+color: var(--accent-color);
+font-size: 0.8rem;
+}

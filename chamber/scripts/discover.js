@@ -2,7 +2,7 @@ import { discoverItems } from "../data/discover.mjs";
 
 // Function to create a card for each discover item
 
-const discoverGrid = document.querySelector("discover-grid");
+const discoverGrid = document.querySelector("#discover-grid");
 
 function displayDiscoverItems(items) {
     if (!discoverGrid) {
@@ -14,7 +14,7 @@ function displayDiscoverItems(items) {
     items.forEach((item, index) => {
         const card = document.createElement("article");
 
-        card.className = "discover-card item-${index + 1}";
+        card.className = `discover-card item-${index + 1}`;
         card.innerHTML = `
             <h2>${item.name}</h2>
             <figure>

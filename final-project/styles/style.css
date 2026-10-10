@@ -1,0 +1,1036 @@
+/* =========================================
+   SORAYA BUSINESS
+   WDD231 INDIVIDUAL PROJECT
+   Main Stylesheet
+========================================= */
+
+/* =========================================
+   1. CSS VARIABLES
+========================================= */
+
+:root {
+    --primary-color: #ec058e;
+    --primary-dark: #b8046d;
+    --accent-color: #62bbc1;
+    --accent-dark: #378f96;
+    --background-color: #fffbfc;
+    --surface-color: #ffffff;
+    --text-color: #010400;
+    --muted-text: #555555;
+    --border-color: #d9d9d9;
+
+    --heading-font: "Merriweather", Georgia, serif;
+    --body-font: "Lato", Arial, sans-serif;
+
+    --max-width: 1200px;
+
+    --shadow-small: 0 2px 8px rgba(1, 4, 0, 0.08);
+    --shadow-medium: 0 5px 18px rgba(1, 4, 0, 0.12);
+
+    --radius-small: 0.4rem;
+    --radius-medium: 0.8rem;
+    --radius-large: 1.2rem;
+
+    --transition: 0.25s ease;
+}
+
+
+/* =========================================
+   2. RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================
+   3. TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    max-width: 70ch;
+}
+
+
+/* =========================================
+   4. HEADER
+========================================= */
+
+.site-header {
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    z-index: 100;
+}
+
+.header-container {
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    color: var(--primary-color);
+    text-decoration: none;
+
+    font-family: var(--heading-font);
+    font-size: 1.05rem;
+}
+
+.logo-link img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+/* =========================================
+   5. MOBILE NAVIGATION
+========================================= */
+
+.menu-button {
+    display: block;
+
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+
+    color: var(--primary-color);
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: var(--radius-small);
+
+    cursor: pointer;
+
+    font-size: 1.5rem;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition);
+}
+
+.menu-button:hover,
+.menu-button:focus-visible {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+.primary-navigation {
+    display: none;
+}
+
+.primary-navigation.open {
+    display: block;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+
+    background-color: var(--surface-color);
+
+    border-bottom: 2px solid var(--primary-color);
+
+    box-shadow: var(--shadow-medium);
+}
+
+.primary-navigation ul {
+    list-style: none;
+}
+
+.primary-navigation a {
+    display: block;
+
+    padding: 1rem 1.5rem;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-left: 4px solid transparent;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        border-color var(--transition);
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus-visible {
+    background-color: #fff0f8;
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+}
+
+.primary-navigation a.active {
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+}
+
+
+/* =========================================
+   6. GENERAL LAYOUT
+========================================= */
+
+main {
+    overflow-x: hidden;
+}
+
+.hero,
+.categories,
+.featured-products,
+.about-preview,
+.product-section,
+.contact-section {
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+}
+
+section {
+    padding-block: 3.5rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading > p,
+.section-label,
+.hero-label,
+.page-header > p:first-child {
+    margin-bottom: 0.5rem;
+
+    color: var(--primary-color);
+
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   7. BUTTONS
+========================================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 1.25rem;
+    padding: 0.8rem 1.4rem;
+
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius-small);
+
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+
+    text-decoration: none;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.secondary-button:hover,
+.secondary-button:focus-visible {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+
+/* =========================================
+   8. HERO
+========================================= */
+
+.hero {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+
+    padding-block: 2rem 4rem;
+}
+
+.hero-content {
+    padding-block: 1rem;
+}
+
+.hero-content h1 {
+    margin-bottom: 1rem;
+}
+
+.hero-content > p:not(.hero-label) {
+    color: var(--muted-text);
+    font-size: 1.05rem;
+}
+
+.hero-image {
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+}
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   9. CATEGORY CARDS
+========================================= */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.category-card {
+    background-color: var(--surface-color);
+
+    padding: 1.5rem;
+
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--accent-color);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+}
+
+.category-card h3 {
+    margin-bottom: 0.7rem;
+    color: var(--primary-color);
+}
+
+.category-card p {
+    color: var(--muted-text);
+}
+
+.category-card a {
+    display: inline-block;
+    margin-top: 1rem;
+
+    color: var(--accent-dark);
+    font-weight: 700;
+
+    text-decoration-thickness: 2px;
+}
+
+
+/* =========================================
+   10. PRODUCT GRID
+========================================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-medium);
+}
+
+.product-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.product-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding: 1.25rem;
+}
+
+.product-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.product-card p {
+    color: var(--muted-text);
+}
+
+.product-category {
+    display: inline-block;
+
+    margin-bottom: 0.6rem;
+
+    color: var(--accent-dark);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.product-price {
+    margin-top: 1rem;
+
+    color: var(--text-color);
+
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.product-availability {
+    margin-top: 0.4rem;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.in-stock {
+    color: #277a35;
+}
+
+.out-of-stock {
+    color: #a32323;
+}
+
+.product-card .button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.section-action {
+    text-align: center;
+}
+
+
+/* =========================================
+   11. ABOUT SECTION
+========================================= */
+
+.about-preview {
+    display: grid;
+
+    background-color: var(--accent-color);
+
+    padding: 2rem;
+
+    border-radius: var(--radius-large);
+}
+
+.about-preview h2 {
+    margin-bottom: 1rem;
+}
+
+.about-preview p {
+    color: #092c2f;
+}
+
+
+/* =========================================
+   12. PAGE HEADER
+========================================= */
+
+.page-header {
+    padding: 3.5rem 1rem;
+
+    background-color: var(--accent-color);
+
+    text-align: center;
+}
+
+.page-header p {
+    margin-inline: auto;
+}
+
+.page-header h1 {
+    margin-bottom: 1rem;
+}
+
+.page-header > p:last-child {
+    color: #092c2f;
+}
+
+
+/* =========================================
+   13. PRODUCT CONTROLS
+========================================= */
+
+.product-controls {
+    display: grid;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.search-box,
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.search-box label,
+.filter-box label {
+    font-weight: 700;
+}
+
+.search-box input,
+.filter-box select {
+    width: 100%;
+
+    padding: 0.8rem 1rem;
+
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-small);
+
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+.search-box input:focus,
+.filter-box select:focus {
+    outline: 3px solid rgba(98, 187, 193, 0.35);
+    border-color: var(--accent-dark);
+}
+
+.product-count {
+    margin-bottom: 1.5rem;
+
+    color: var(--muted-text);
+
+    font-weight: 700;
+}
+
+.loading,
+.error-message {
+    grid-column: 1 / -1;
+
+    padding: 2rem;
+
+    text-align: center;
+
+    border-radius: var(--radius-medium);
+}
+
+.error-message {
+    background-color: #fff0f0;
+    color: #8b1e1e;
+    border: 1px solid #e0a0a0;
+}
+
+
+/* =========================================
+   14. MODAL
+========================================= */
+
+.product-modal {
+    width: min(90%, 600px);
+
+    border: none;
+    border-radius: var(--radius-medium);
+
+    padding: 0;
+
+    background-color: var(--surface-color);
+
+    box-shadow: 0 10px 40px rgba(1, 4, 0, 0.3);
+}
+
+.product-modal::backdrop {
+    background-color: rgba(1, 4, 0, 0.65);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+
+    background-color: var(--surface-color);
+    color: var(--primary-color);
+
+    font-size: 1.5rem;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+.modal-product-image {
+    width: 100%;
+    max-height: 350px;
+
+    margin-bottom: 1.5rem;
+
+    border-radius: var(--radius-small);
+
+    object-fit: cover;
+}
+
+.modal-content h2 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.modal-details {
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+/* =========================================
+   15. CONTACT PAGE
+========================================= */
+
+.contact-section {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.contact-information h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-information > p {
+    color: var(--muted-text);
+}
+
+.contact-details {
+    display: grid;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.contact-details div {
+    padding: 1rem;
+
+    border-left: 4px solid var(--accent-color);
+
+    background-color: var(--surface-color);
+
+    box-shadow: var(--shadow-small);
+}
+
+.contact-details h3 {
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+}
+
+.contact-form-container {
+    padding: 1.5rem;
+
+    background-color: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+}
+
+#contact-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 0.8rem 1rem;
+
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-small);
+
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 3px solid rgba(98, 187, 193, 0.35);
+    border-color: var(--accent-dark);
+}
+
+
+/* =========================================
+   16. FOOTER
+========================================= */
+
+.site-footer {
+    margin-top: 4rem;
+
+    background-color: var(--text-color);
+    color: var(--surface-color);
+}
+
+.footer-container {
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+
+    display: grid;
+    gap: 2rem;
+
+    padding-block: 3rem;
+}
+
+.footer-container h2 {
+    margin-bottom: 0.75rem;
+
+    color: var(--accent-color);
+
+    font-size: 1.2rem;
+}
+
+.footer-container p {
+    color: #eeeeee;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-container a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.footer-container a:hover,
+.footer-container a:focus-visible {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    width: min(100% - 2rem, var(--max-width));
+    margin-inline: auto;
+
+    padding-block: 1.5rem;
+
+    border-top: 1px solid #444444;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0.25rem auto;
+
+    color: #dddddd;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   17. ACCESSIBILITY
+========================================= */
+
+:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* =========================================
+   18. TABLET
+========================================= */
+
+@media screen and (min-width: 600px) {
+
+    .header-container {
+        min-height: 90px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-navigation {
+        display: block;
+    }
+
+    .primary-navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .primary-navigation a {
+        padding: 0.6rem 0.9rem;
+
+        border-left: none;
+        border-bottom: 3px solid transparent;
+
+        border-radius: var(--radius-small);
+    }
+
+    .primary-navigation a:hover,
+    .primary-navigation a:focus-visible {
+        border-left: none;
+        border-bottom-color: var(--primary-color);
+    }
+
+    .primary-navigation a.active {
+        border-left: none;
+        border-bottom-color: var(--primary-color);
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+
+        min-height: 500px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-controls {
+        grid-template-columns: 2fr 1fr;
+        align-items: end;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr 1.2fr;
+        align-items: start;
+    }
+
+    .footer-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+/* =========================================
+   19. DESKTOP
+========================================= */
+
+@media screen and (min-width: 900px) {
+
+    .header-container {
+        min-height: 96px;
+    }
+
+    .logo-link {
+        font-size: 1.2rem;
+    }
+
+    .logo-link img {
+        width: 60px;
+        height: 60px;
+    }
+
+    section {
+        padding-block: 5rem;
+    }
+
+    .hero {
+        gap: 4rem;
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding-right: 1rem;
+    }
+
+    .hero-content > p:not(.hero-label) {
+        font-size: 1.15rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-preview {
+        padding: 4rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+
+/* =========================================
+   20. LARGE DESKTOP
+========================================= */
+
+@media screen and (min-width: 1200px) {
+
+    .header-container {
+        min-height: 100px;
+    }
+
+    .hero {
+        padding-block: 5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

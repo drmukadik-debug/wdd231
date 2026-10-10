@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soraya Business | Contact Us</title>
+
+    <meta name="description" content="Contact Soraya Business for questions about women's clothing, cosmetics, accessories, prices, and product availability.">
+    <meta name="author" content="Alain Mukadi Kabeya">
+    <meta property="og:title" content="Soraya Business | Contact Us">
+    <meta property="og:description" content="Contact Soraya Business about products, prices, and availability.">
+    <meta property="og:image" content="https://drmukadik-debug.github.io/wdd231/final-project/images/soraya-social.svg">
+    <meta property="og:url" content="https://drmukadik-debug.github.io/wdd231/final-project/index.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/soraya-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html"  class="logo-link" aria-label="Soraya Business home">
+                <img src="images/soraya-logo.svg" alt="Soraya Business logo" width="120" height="120">
+                <span>Soraya Business</span>
+            </a>
+
+            <button
+                class="menu-button" id="menu-button" aria-label="Open navigation menu" aria-expanded="false aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-header">
+
+            <p>GET IN TOUCH</p>
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Have a question about a product?
+                Send us a message.
+            </p>
+
+        </section>
+
+        <section class="contact-section">
+
+            <div class="contact-information">
+
+                <h2>Let's Talk</h2>
+
+                <p>
+                    We are happy to answer your questions about
+                    products, prices, availability, and our collection.
+                </p>
+
+                <div class="contact-details">
+
+                    <div>
+                        <h3>Business</h3>
+                        <p>Soraya Business</p>
+                    </div>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Mbujimayi, Democratic Republic of Congo</p>
+                    </div>
+
+                    <div>
+                        <h3>Products</h3>
+                        <p>Clothing, Cosmetics & Accessories</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contact-form-container">
+
+                <form action="form-action.html" method="get" id="contact-form">
+                    <div class="form-group">
+                        <label for="name"> Full Name *</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> Email Address *</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Product Category</label>
+                        <select id="category" name="category">
+                            <option value="">Select a category</option>
+                            <option value="Clothing">Clothing</option>
+                            <option value="Cosmetics">Cosmetics</option>
+                            <option value="Accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <h2>Soraya Business</h2>
+                <p>Women's Clothing & Cosmetics</p>
+            </div>
+            <div>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span>
+                Soraya Business
+            </p>
+            <p>
+                Created by Alain Mukadi Kabeya
+            </p>
+            <p>
+                WDD231 Individual Project
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

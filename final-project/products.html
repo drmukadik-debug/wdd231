@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soraya Business | Products</title>
+
+    <meta name="description"
+        content="Browse the Soraya Business collection of women's clothing, cosmetics, and accessories. Discover product details, prices, and availability.">
+
+    <meta name="author" content="Alain Mukadi Kabeya">
+
+    <meta property="og:title" content="Soraya Business | Products">
+    <meta property="og:description"
+        content="Browse women's clothing, cosmetics, and accessories from Soraya Business.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="">
+
+    <link rel="icon" href="images/favicon.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="module" src="js/products.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo-link" aria-label="Soraya Business home">
+                <img
+                    src="images/logo.webp"
+                    alt="Soraya Business logo"
+                    width="120"
+                    height="120">
+                <span>Soraya Business</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html"
+                           class="active"
+                           aria-current="page">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="page-header">
+
+            <p>OUR COLLECTION</p>
+
+            <h1>Products</h1>
+
+            <p>
+                Explore our collection of women's clothing,
+                cosmetics, and accessories.
+            </p>
+
+        </section>
+
+        <section class="product-section">
+
+            <div class="product-controls">
+
+                <div class="search-box">
+                    <label for="product-search">
+                        Search products
+                    </label>
+
+                    <input
+                        type="search"
+                        id="product-search"
+                        placeholder="Search by product name...">
+                </div>
+
+                <div class="filter-box">
+
+                    <label for="category-filter">
+                        Filter by category
+                    </label>
+
+                    <select id="category-filter">
+
+                        <option value="all">
+                            All Products
+                        </option>
+
+                        <option value="Clothing">
+                            Clothing
+                        </option>
+
+                        <option value="Cosmetics">
+                            Cosmetics
+                        </option>
+
+                        <option value="Accessories">
+                            Accessories
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div
+                id="product-count"
+                class="product-count"
+                aria-live="polite">
+            </div>
+
+            <div
+                id="product-grid"
+                class="product-grid">
+
+                <p class="loading">
+                    Loading products...
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Accessible modal -->
+
+        <dialog id="product-modal" class="product-modal">
+
+            <div class="modal-content">
+
+                <button
+                    id="modal-close"
+                    class="modal-close"
+                    aria-label="Close product details">
+                    &times;
+                </button>
+
+                <div id="modal-body">
+                    <!-- Product details generated by JavaScript -->
+                </div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h2>Soraya Business</h2>
+                <p>Women's Clothing & Cosmetics</p>
+            </div>
+
+            <div>
+                <h2>Quick Links</h2>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Soraya Business
+            </p>
+
+            <p>
+                Created by Alain Mukadi Kabeya
+            </p>
+
+            <p>
+                WDD231 Individual Project
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

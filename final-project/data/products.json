@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Leopard Slingback Heels",
+        "category": "Clothing",
+        "price": 35,
+        "currency": "USD",
+        "description": "Stylish leopard heels with pointed toes and medium-height heels.",
+        "availability": "In Stock",
+        "image": "images/wild-heels.webp"
+    },
+    {
+        "id": 2,
+        "name": "Wide Leg Pants",
+        "category": "Clothing",
+        "price": 80,
+        "currency": "USD",
+        "description": "Matching printed top and wide-leg trousers.",
+        "availability": "In Stock",
+        "image": "images/glamour-set.webp"
+    },
+    {
+        "id": 3,
+        "name": "Green Tailored Pantsuit",
+        "category": "Clothing",
+        "price": 120,
+        "currency": "USD",
+        "description": "Elegant green pantsuit with white lapels and decorative details.",
+        "availability": "In Stock",
+        "image": "images/royal-grace.webp"
+    },
+    {
+        "id": 4,
+        "name": "Black Formal Pantsuit",
+        "category": "Clothing",
+        "price": 150,
+        "currency": "USD",
+        "description": "Classic black suit for professional and formal occasions.",
+        "availability": "In Stock",
+        "image": "images/black-elegance.webp"
+    },
+    {
+        "id": 5,
+        "name": "Black Patent High Heel Pumps",
+        "category": "Clothing",
+        "price": 70,
+        "currency": "USD",
+        "description": "Glossy black heels with pointed toes and stylish details.",
+        "availability": "In Stock",
+        "image": "images/diamond-pumps.webp"
+    },
+    {
+        "id": 6,
+        "name": "Black Chunky Sole Loafers",
+        "category": "Clothing",
+        "price": 80,
+        "currency": "USD",
+        "description": "Comfortable black loafers with thick, textured soles.",
+        "availability": "In Stock",
+        "image": "images/urban-loafers.webp"
+    },
+    {
+        "id": 7,
+        "name": "Vitamin C Radiance Body Lotion",
+        "category": "Cosmetics",
+        "price": 12,
+        "currency": "USD",
+        "description": "Moisturizing lotion that helps promote radiant-looking skin.",
+        "availability": "In Stock",
+        "image": "images/nivea.webp"
+    },
+    {
+        "id": 8,
+        "name": "Advanced Care Body Lotion",
+        "category": "Cosmetics",
+        "price": 18,
+        "currency": "USD",
+        "description": "Nourishing body lotion for dry and very dry skin.",
+        "availability": "In Stock",
+        "image": "images/vaseline.webp"
+    },
+    {
+        "id": 9,
+        "name": "Pride Pour Femme Perfume",
+        "category": "Cosmetics",
+        "price": 50,
+        "currency": "USD",
+        "description": "Elegant pink-bottled fragrance designed for women.",
+        "availability": "In Stock",
+        "image": "images/pride.webp"
+    },
+    {
+        "id": 10,
+        "name": "Purple Satin African Kaftan",
+        "category": "Clothing",
+        "price": 140,
+        "currency": "USD",
+        "description": "Elegant purple satin kaftan with matching headscarf.",
+        "availability": "In Stock",
+        "image": "images/royal-purple.webp"
+    },
+    {
+        "id": 11,
+        "name": "Blue Floral Button Front Dress",
+        "category": "Clothing",
+        "price": 97,
+        "currency": "USD",
+        "description": "Light-blue floral dress with short sleeves and front buttons.",
+        "availability": "In Stock",
+        "image": "images/blue-blossom.webp"
+    },
+    {
+        "id": 12,
+        "name": "Brown Draped Evening Maxi Dress",
+        "category": "Clothing",
+        "price": 130,
+        "currency": "USD",
+        "description": "Versatile eyeshadow palette with shades for everyday and special looks.",
+        "availability": "Limited",
+        "image": "images/velvet-grace.webp"
+    },
+    {
+        "id": 13,
+        "name": "Brown Quilted Chain Bag",
+        "category": "Accessories",
+        "price": 75,
+        "currency": "USD",
+        "description": "Glossy brown quilted handbag with a decorative gold chain.",
+        "availability": "In Stock",
+        "image": "images/royal-clutch.webp"
+    },
+    {
+        "id": 14,
+        "name": "Black Tote Bag",
+        "category": "Accessories",
+        "price": 18,
+        "currency": "USD",
+        "description": "Spacious checkered tote with bold colored stripes.",
+        "availability": "In Stock",
+        "image": "images/urban-tote.wbp"
+    },
+    {
+        "id": 15,
+        "name": "Orange Handbag Sandal Gift Set",
+        "category": "Accessories",
+        "price": 25,
+        "currency": "USD",
+        "description": "Matching orange handbag and flat sandals.",
+        "availability": "Limited",
+        "image": "images/orange-luxe.webp"
+    },
+    {
+        "id": 16,
+        "name": "Red Satin Halter Neck Gown",
+        "category": "Clothing",
+        "price": 100,
+        "currency": "USD",
+        "description": "Elegant red satin gown with an open back and halter neckline.",
+        "availability": "In Stock",
+        "image": "images/scarlet-glow.webp"
+    },
+    {
+        "id": 17,
+        "name": "Gold Sleeveless Evening Maxi Dress",
+        "category": "Clothing",
+        "price": 300,
+        "currency": "USD",
+        "description": "Glamorous gold maxi dress with elegant waist draping.",
+        "availability": "In Stock",
+        "image": "images/golden-grace.webp"
+    },
+    {
+        "id": 18,
+        "name": "Rose Gold Crystal Watch",
+        "category": "Accessories",
+        "price": 14,
+        "currency": "USD",
+        "description": "Elegant rose gold watch and matching crystal bracelet set.",
+        "availability": "In Stock",
+        "image": "images/gold-watch"
+    }
+]

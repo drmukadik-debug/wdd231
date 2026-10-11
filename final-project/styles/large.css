@@ -1,0 +1,157 @@
+/* ACCESSIBILITY */
+
+:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+
+    .header-container {
+        min-height: 90px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-navigation {
+        display: block;
+    }
+
+    .primary-navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .primary-navigation a {
+        padding: 0.6rem 0.9rem;
+
+        border-left: none;
+        border-bottom: 3px solid transparent;
+
+        border-radius: var(--radius-small);
+    }
+
+    .primary-navigation a:hover,
+    .primary-navigation a:focus-visible {
+        border-left: none;
+        border-bottom-color: var(--primary-color);
+    }
+
+    .primary-navigation a.active {
+        border-left: none;
+        border-bottom-color: var(--primary-color);
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+
+        min-height: 500px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-controls {
+        grid-template-columns: 2fr 1fr;
+        align-items: end;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr 1.2fr;
+        align-items: start;
+    }
+
+    .footer-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 900px) {
+
+    .header-container {
+        min-height: 96px;
+    }
+
+    .logo-link {
+        font-size: 1.2rem;
+    }
+
+    .logo-link img {
+        width: 60px;
+        height: 60px;
+    }
+
+    section {
+        padding-block: 5rem;
+    }
+
+    .hero {
+        gap: 4rem;
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding-right: 1rem;
+    }
+
+    .hero-content > p:not(.hero-label) {
+        font-size: 1.15rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-preview {
+        padding: 4rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1200px) {
+
+    .header-container {
+        min-height: 100px;
+    }
+
+    .hero {
+        padding-block: 5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -10,8 +10,10 @@
     <meta name="author" content="Alain Mukadi Kabeya">
     <meta property="og:title" content="Soraya Business | Contact Us">
     <meta property="og:description" content="Contact Soraya Business about products, prices, and availability.">
-    <meta property="og:image" content="https://drmukadik-debug.github.io/wdd231/final-project/images/soraya-social.svg">
-    <meta property="og:url" content="https://drmukadik-debug.github.io/wdd231/final-project/index.html">
+    <meta property="og:image" 
+        content="https://drmukadik-debug.github.io/wdd231/final-project/images/soraya-social.svg">
+    <meta property="og:url" 
+        content="https://drmukadik-debug.github.io/wdd231/final-project/index.html">
     <meta property="og:type" content="website">
     <link rel="icon" href="images/soraya-logo.svg" type="image/svg+xml">
 
@@ -23,7 +25,8 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/home.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -34,15 +37,20 @@
             </a>
 
             <button
-                class="menu-button" id="menu-button" aria-label="Open navigation menu" aria-expanded="false aria-controls="primary-navigation">
-                ☰
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
             </button>
 
             <nav id="primary-navigation" class="primary-navigation" aria-label="Primary Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">products</a></li>
-                    <li><a href="contact.html" class="active" aria-current="page">contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
         </div>

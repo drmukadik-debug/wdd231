@@ -2,74 +2,124 @@ const modal = document.querySelector("#product-modal");
 const modalBody = document.querySelector("#modal-body");
 const modalClose = document.querySelector("#modal-close");
 
-
+/**
+ * Open the product details modal.
+ * @param {Object} product - Product to display.
+ */
 export function openProductModal(product) {
-
-    if (!modal || !modalBody) {
+    if (!modal || !modalBody || !product) {
         return;
     }
 
-    modalBody.innerHTML = `
-        <img
-            class="modal-product-image"
-            src="${product.image}"
-            alt="${product.name}"
-            width="800"
-            height="600"
-        >
+    // Clear previous product details.
+    modalBody.replaceChildren();
 
-        <p class="product-category">${product.category}</p>
+    // Product image.
+    const image = document.createElement("img");
+    image.className = "modal-product-image";
+    image.src = product.image;
+    image.alt = product.name || "Product image";
+    image.width = 800;
+    image.height = 600;
 
-        <h2>${product.name}</h2>
+    // Product category.
+    const category = document.createElement("p");
+    category.className = "product-category";
+    category.textContent = product.category || "Uncategorized";
 
-        <div class="modal-details">
+    // Product name.
+    const name = document.createElement("h2");
+    name.id = "modal-product-title";
+    name.textContent = product.name || "Product details";
 
-            <p>
-                <strong>Price:</strong>
-                ${product.currency} ${product.price.toFixed(2)}
-            </p>
+    // Product details container.
+    const details = document.createElement("div");
+    details.className = "modal-details";
 
-            <p>
-                <strong>Availability:</strong>
-                ${product.availability}
-            </p>
+    // Price.
+    const priceParagraph = document.createElement("p");
+    const priceLabel = document.createElement("strong");
+    priceLabel.textContent = "Price: ";
 
-            <p>
-                <strong>Description:</strong>
-                ${product.description}
-            </p>
+    const numericPrice = Number(product.price);
+    const priceValue = document.createTextNode(
+        `${product.currency || ""} ${
+            Number.isFinite(numericPrice)
+                ? numericPrice.toFixed(2)
+                : "Price unavailable"
+        }`
+    );
 
-        </div>
-    `;
+    priceParagraph.append(priceLabel, priceValue);
 
-    modal.showModal();
+    // Availability.
+    const availabilityParagraph = document.createElement("p");
+    const availabilityLabel = document.createElement("strong");
+    availabilityLabel.textContent = "Availability: ";
+
+    const availabilityValue = document.createTextNode(
+        product.availability || "Availability unknown"
+    );
+
+    availabilityParagraph.append(
+        availabilityLabel,
+        availabilityValue
+    );
+
+    // Description.
+    const descriptionParagraph = document.createElement("p");
+    const descriptionLabel = document.createElement("strong");
+    descriptionLabel.textContent = "Description: ";
+
+    const descriptionValue = document.createTextNode(
+        product.description || "No description available."
+    );
+
+    descriptionParagraph.append(
+        descriptionLabel,
+        descriptionValue
+    );
+
+    details.append(
+        priceParagraph,
+        availabilityParagraph,
+        descriptionParagraph
+    );
+
+    modalBody.append(
+        image,
+        category,
+        name,
+        details
+    );
+
+    // Associate the dialog with its visible title.
+    modal.setAttribute("aria-labelledby", "modal-product-title");
+
+    // Open the dialog only if it is not already open.
+    if (!modal.open) {
+        modal.showModal();
+    }
 }
 
-
+/**
+ * Close the product details modal.
+ */
 function closeProductModal() {
-    if (modal) {
+    if (modal?.open) {
         modal.close();
     }
 }
 
-
+// Close when the close button is clicked.
 if (modalClose) {
     modalClose.addEventListener("click", closeProductModal);
 }
 
-
+// Close when the user clicks the backdrop outside the dialog.
 if (modal) {
     modal.addEventListener("click", (event) => {
-
-        const rect = modal.getBoundingClientRect();
-
-        const clickedOutside =
-            event.clientX < rect.left ||
-            event.clientX > rect.right ||
-            event.clientY < rect.top ||
-            event.clientY > rect.bottom;
-
-        if (clickedOutside) {
+        if (event.target === modal) {
             closeProductModal();
         }
     });

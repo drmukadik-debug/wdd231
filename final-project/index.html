@@ -8,20 +8,25 @@
     <meta name="description" content="Discover women's clothing, cosmetics, and accessories at Soraya Business. Browse our collection and find products that match your styles.">
     <meta name="author" content="Alain Mukadi Kabeya">
     <meta property="og:title" content="Soraya Business | Women's Clothing & Cosmetics">
-    <meta property="og:description" content="Discover women's clothing, cosmetics, and accessories at Soraya Business">
-    <meta property="og:image" content="https://drmukadik-debug.github.io/wdd231/final-project/images/soraya-social.svg">
-    <meta property="og:url" content="https://drmukadik-debug.github.io/wdd231/final-project/index.html">
+    <meta property="og:description" 
+        content="Explore women's clothing, cosmetics, and accessories at Soraya Business. Browse products, compare prices, and discover your style.">
+    <meta property="og:image" 
+        content="https://drmukadik-debug.github.io/wdd231/final-project/images/soraya-social.svg">
+    <meta property="og:url" 
+        content="https://drmukadik-debug.github.io/wdd231/final-project">
     <meta property="og:type" content="website">
     <link rel="icon" href="images/soraya-logo.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/home.js"></script>
 </head>
 
 <body>
@@ -33,15 +38,20 @@
             </a>
 
             <button
-                class="menu-button" id="menu-button" aria-label="Open navigation menu" aria-expanded="false aria-controls="primary-navigation">
-                ☰
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span aria-hidden="true">☰</span>
             </button>
-
+            
             <nav id="primary-navigation" class="primary-navigation" aria-label="Primary Navigation">
                 <ul>
                     <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-                    <li><a href="products.html">products</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>

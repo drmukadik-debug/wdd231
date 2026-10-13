@@ -12,8 +12,8 @@
         content="Explore women's clothing, cosmetics, and accessories at Soraya Business. Browse products, compare prices, and discover your style.">
     <meta property="og:image" 
         content="https://drmukadik-debug.github.io/wdd231/final-project/images/soraya-social.svg">
-    <meta property="og:url" 
-        content="https://drmukadik-debug.github.io/wdd231/final-project">
+    <meta property="og:url"
+      content="https://drmukadik-debug.github.io/wdd231/final-project/">
     <meta property="og:type" content="website">
     <link rel="icon" href="images/soraya-logo.svg" type="image/svg+xml">
 
@@ -60,46 +60,37 @@
     <main>
 
         <section class="hero">
-
             <div class="hero-content">
-
                 <p class="hero-label">WELCOME TO SORAYA BUSINESS</p>
-
                 <h1>
                     Discover Your Style
                 </h1>
-
                 <p>
                     Explore our collection of women's clothing,
                     cosmetics, and accessories designed to help
                     you look and feel confident.
                 </p>
-
                 <a href="products.html" class="button">
                     Explore Products
                 </a>
-
             </div>
-
             <div class="hero-image">
                 <img
                     src="images/hero.webp"
                     alt="Women's fashion and beauty products"
                     width="800"
-                    height="600">
+                    height="600"
+                    fetchpriority="high">
             </div>
-
         </section>
 
         <section class="categories">
-
             <div class="section-heading">
                 <p>SHOP WITH US</p>
                 <h2>Explore Our Categories</h2>
             </div>
 
             <div class="category-grid">
-
                 <article class="category-card">
                     <h3>Clothing</h3>
                     <p>
@@ -134,20 +125,16 @@
                 </article>
 
             </div>
-
         </section>
 
         <section class="featured-products">
-
             <div class="section-heading">
                 <p>OUR COLLECTION</p>
                 <h2>Featured Products</h2>
             </div>
-
-            <div id="featured-products" class="product-grid">
-                <!-- Products generated with JavaScript -->
+            <div id="featured-products" class="product-grid" aria-busy="true">
+                <p class="loading">Loading featured products...</p>
             </div>
-
             <div class="section-action">
                 <a href="products.html" class="button">
                     View All Products

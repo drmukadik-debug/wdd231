@@ -137,7 +137,7 @@
         "currency": "USD",
         "description": "Spacious checkered tote with bold colored stripes.",
         "availability": "In Stock",
-        "image": "images/urban-tote.wbp"
+        "image": "images/urban-tote.webp"
     },
     {
         "id": 15,
@@ -177,6 +177,6 @@
         "currency": "USD",
         "description": "Elegant rose gold watch and matching crystal bracelet set.",
         "availability": "In Stock",
-        "image": "images/gold-watch"
+        "image": "images/gold-watch.webp"
     }
 ]

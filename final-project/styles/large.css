@@ -1,28 +1,4 @@
-/* ACCESSIBILITY */
-
-:focus-visible {
-    outline: 3px solid var(--accent-color);
-    outline-offset: 3px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
-        animation: none !important;
-    }
-}
-
-
-/* TABLET */
-
-@media screen and (min-width: 600px) {
-
+@media (min-width: 600px) {
     .header-container {
         min-height: 90px;
     }
@@ -43,27 +19,24 @@
 
     .primary-navigation a {
         padding: 0.6rem 0.9rem;
-
-        border-left: none;
+        border: none;
         border-bottom: 3px solid transparent;
-
         border-radius: var(--radius-small);
     }
 
     .primary-navigation a:hover,
-    .primary-navigation a:focus-visible {
-        border-left: none;
+    .primary-navigation a:focus-visible,
+    .primary-navigation a.active {
         border-bottom-color: var(--primary-color);
     }
 
-    .primary-navigation a.active {
-        border-left: none;
-        border-bottom-color: var(--primary-color);
+    .primary-navigation a:hover,
+    .primary-navigation a:focus-visible {
+        background: #fff0f8;
     }
 
     .hero {
         grid-template-columns: 1fr 1fr;
-
         min-height: 500px;
     }
 
@@ -90,11 +63,7 @@
     }
 }
 
-
-/* DESKTOP */
-
-@media screen and (min-width: 900px) {
-
+@media (min-width: 900px) {
     .header-container {
         min-height: 96px;
     }
@@ -104,8 +73,8 @@
     }
 
     .logo-link img {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 
     section {
@@ -138,11 +107,7 @@
     }
 }
 
-
-/* LARGE DESKTOP */
-
-@media screen and (min-width: 1200px) {
-
+@media (min-width: 1200px) {
     .header-container {
         min-height: 100px;
     }
@@ -153,5 +118,16 @@
 
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 599px) {
+    .logo-link img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-link {
+        font-size: 0.95rem;
     }
 }
